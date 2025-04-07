@@ -8,7 +8,7 @@ while [[ "$#" -gt 0 ]]; do
         --resource-group-name) RESOURCE_GROUP_NAME="$2"; shift ;;
         --username) ADMIN_USERNAME="$2"; shift ;;
         --password) ADMIN_PASSWORD="$2"; shift ;;
-        --runner-name) RUNNER_NAME="$2"; shift ;;
+        --vmss-name) VMSS_NAME="$2"; shift ;;
         *) echo "Unknown parameter passed: $1"; exit 1 ;;
     esac
     shift
